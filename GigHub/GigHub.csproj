@@ -24,6 +24,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -219,6 +220,10 @@
     <Compile Include="Migrations\201511252305065_AddFollowing.Designer.cs">
       <DependentUpon>201511252305065_AddFollowing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706141454040_first.cs" />
+    <Compile Include="Migrations\201706141454040_first.Designer.cs">
+      <DependentUpon>201706141454040_first.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -329,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511252305065_AddFollowing.resx">
       <DependentUpon>201511252305065_AddFollowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706141454040_first.resx">
+      <DependentUpon>201706141454040_first.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
