@@ -229,6 +229,10 @@
     <Compile Include="Migrations\201706161919418_AddNotificationsModel.Designer.cs">
       <DependentUpon>201706161919418_AddNotificationsModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706231801526_ggg.cs" />
+    <Compile Include="Migrations\201706231801526_ggg.Designer.cs">
+      <DependentUpon>201706231801526_ggg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -350,6 +354,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706161919418_AddNotificationsModel.resx">
       <DependentUpon>201706161919418_AddNotificationsModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706231801526_ggg.resx">
+      <DependentUpon>201706231801526_ggg.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
