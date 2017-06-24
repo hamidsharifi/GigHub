@@ -229,6 +229,10 @@
     <Compile Include="Migrations\201706161919418_AddNotificationsModel.Designer.cs">
       <DependentUpon>201706161919418_AddNotificationsModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706221022248_init.cs" />
+    <Compile Include="Migrations\201706221022248_init.Designer.cs">
+      <DependentUpon>201706221022248_init.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -259,6 +263,8 @@
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="App_Data.rar" />
+    <Content Include="Doc.rtf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -271,7 +277,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -350,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706161919418_AddNotificationsModel.resx">
       <DependentUpon>201706161919418_AddNotificationsModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706221022248_init.resx">
+      <DependentUpon>201706221022248_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
