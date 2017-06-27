@@ -15,21 +15,21 @@ namespace GigHub.Models
         public int NotificationId { get; private set; }
 
         public ApplicationUser User { get; private set; }
+
         public Notification Notification { get; private set; }
 
         public bool IsRead { get; set; }
 
-        public UserNotification()
+        protected UserNotification()
         {
-            
         }
 
         public UserNotification(ApplicationUser user, Notification notification)
         {
-            if(user == null)
+            if (user == null)
                 throw new ArgumentNullException("user");
 
-            if(notification == null)
+            if (notification == null)
                 throw new ArgumentNullException("notification");
 
             User = user;
