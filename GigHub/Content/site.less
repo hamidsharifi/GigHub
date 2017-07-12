@@ -3,6 +3,13 @@
     padding-bottom: 20px;
 }
 
+#searchGigs {
+    width: 400px;
+
+    input {
+        max-width: none;
+    }
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -28,12 +35,29 @@ span.field-validation-error {
     font-weight: bold;
 }
 
-.voffset { margin-top: 2px; }
-.voffset1 { margin-top: 5px; }
-.voffset2 { margin-top: 10px; }
-.voffset3 { margin-top: 20px; }
-.voffset4 { margin-top: 40px; }
-.voffset5 { margin-top: 80px; }
+.voffset {
+    margin-top: 2px;
+}
+
+.voffset1 {
+    margin-top: 5px;
+}
+
+.voffset2 {
+    margin-top: 10px;
+}
+
+.voffset3 {
+    margin-top: 20px;
+}
+
+.voffset4 {
+    margin-top: 40px;
+}
+
+.voffset5 {
+    margin-top: 80px;
+}
 
 /* Bootstrap Overrides */
 .popover {
@@ -58,12 +82,12 @@ span.field-validation-error {
     position: relative;
 }
 
-    .navbar-inverse .notifications .badge {
-        position: absolute;
-        top: 8px;
-        right: -1px;
-        background: #a80a0a;
-    }
+.navbar-inverse .notifications .badge {
+    position: absolute;
+    top: 8px;
+    right: -1px;
+    background: #a80a0a;
+}
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: rgba(205, 40, 39, 0.55);
@@ -80,7 +104,7 @@ span.field-validation-error {
 }
 
 .navbar-brand {
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 body {
@@ -112,8 +136,18 @@ h6,
     height: 44px;
     -ms-border-radius: 9px;
     border-radius: 9px;
+    transition: none;
+    -webkit-transition: none;
 }
 
+.form-control:focus {
+    box-shadow: none;
+    webkit-box-shadow:none;
+}
+.form-control:focus >input{
+    box-shadow: none;
+    webkit-box-shadow:none;
+}
 
 .btn {
     /*font-size: 17px;
@@ -125,61 +159,65 @@ h6,
 /* Page-level styles */
 .gigs {
     list-style: none;
-}
 
-.gigs > li {
-    position: relative;
-    margin-bottom: 30px;
-}
+    > li {
+        position: relative;
+        margin-bottom: 30px;
 
-.gigs > li .date {
-    background: red;
-    color: white;
-    text-align: center;
-    width: 60px;
-    -ms-border-radius: 8px;
-    border-radius: 8px;
-}
+        .date {
+            background: red;
+            color: white;
+            text-align: center;
+            width: 60px;
+            -ms-border-radius: 8px;
+            border-radius: 8px;
 
-.gigs > li .date .month {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 2px 6px;
-}
+            .month {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 2px 6px;
+            }
 
-    .gigs > li .date .day {
-        background: #f7f7f7;
-        color: #333;
-        font-size: 20px;
-        padding: 6px 12px;
+            .day {
+                background: #f7f7f7;
+                color: #333;
+                font-size: 20px;
+                padding: 6px 12px;
+            }
+        }
+
+        .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+
+            .artist {
+                font-weight: bold;
+                display: block;
+            }
+
+            .genre {
+                font-size: 15px;
+            }
+        }
+
+        .actions {
+            font-size: 15px;
+            display: none;
+        }
     }
 
-.gigs > li .details {
-    position: absolute;
-    top: 0;
-    left: 70px;    
-}
-
-    .gigs > li .details .artist {
-        font-weight: bold;
+    > li:hover .actions {
         display: block;
     }
-
-    .gigs > li .details .genre {
-        font-size: 15px;
-    }
-
-.gigs > li .actions {
-    font-size: 15px; 
-    display: none;
-}
-
-.gigs > li:hover .actions {
-    display: block;
 }
 
 .popover-notifications {
+    .popover-content {
+        padding: 0;
+    }
+
     ul.notifications {
         list-style: none;
         padding-left: 0;
@@ -193,12 +231,15 @@ h6,
             border-bottom: none;
         }
 
-        .highlight{
+        .highlight {
             font-weight: bold;
         }
     }
+}
 
-    .popover-content {
-        padding: 0;
-    }
+
+
+.form-control #SearchTerm{
+    box-shadow: none;
+    webkit-box-shadow: none;
 }
